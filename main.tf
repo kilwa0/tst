@@ -6,3 +6,7 @@ resource "null_resource" "melon" {
     command = "echo ${var.melon}"
   }
 }
+
+output "echo" {
+  value = null_resource.melon
+}
